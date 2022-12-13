@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name TPSE-Glass-rescue)(type Legacy)(uri "${KIPRJMOD}/TPSE Glass-rescue.lib")(options "")(descr ""))
+)

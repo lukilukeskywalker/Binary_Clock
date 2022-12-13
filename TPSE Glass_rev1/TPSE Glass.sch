@@ -1,0 +1,1043 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TPSE-Glass-rescue:ATmega32U4-AU-MCU_Microchip_ATmega U1
+U 1 1 5E8DE112
+P 2950 2950
+F 0 "U1" H 2950 1061 50  0000 C CNN
+F 1 "ATmega32U4-AU" H 2950 970 50  0000 C CNN
+F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 2950 2950 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 2950 2950 50  0001 C CNN
+F 4 "3,6" H 2950 2950 50  0001 C CNN "Precio"
+	1    2950 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 1150 2850 1050
+Wire Wire Line
+	2850 1050 2950 1050
+Wire Wire Line
+	3050 1050 3050 1150
+Wire Wire Line
+	2950 1150 2950 1050
+Connection ~ 2950 1050
+Wire Wire Line
+	2950 1050 3050 1050
+Wire Wire Line
+	2850 4750 2850 4800
+Wire Wire Line
+	2850 4800 2900 4800
+Wire Wire Line
+	2950 4800 2950 4750
+$Comp
+L Device:C C1
+U 1 1 5E8E2A2F
+P 1650 1600
+F 0 "C1" V 1398 1600 50  0000 C CNN
+F 1 "22pf" V 1489 1600 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1688 1450 50  0001 C CNN
+F 3 "https://www.mouser.es/ProductDetail/Vishay-Vitramon/VJ0805A220KXJPW1BC?qs=sGAEpiMZZMs0AnBnWHyRQHefeAIkSpb%2FfEEZfHGJOmc%3D" H 1650 1600 50  0001 C CNN
+F 4 "0.108" H 1650 1600 50  0001 C CNN "Precio"
+	1    1650 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5E8E35D4
+P 1650 1900
+F 0 "C2" V 1398 1900 50  0000 C CNN
+F 1 "22pf" V 1489 1900 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1688 1750 50  0001 C CNN
+F 3 "https://www.mouser.es/ProductDetail/Vishay-Vitramon/VJ0805A220KXJPW1BC?qs=sGAEpiMZZMs0AnBnWHyRQHefeAIkSpb%2FfEEZfHGJOmc%3D" H 1650 1900 50  0001 C CNN
+F 4 "0.108" H 1650 1900 50  0001 C CNN "Precio"
+	1    1650 1900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2350 1600 2350 1650
+Wire Wire Line
+	2350 1850 2350 1900
+Wire Wire Line
+	1500 1900 1500 1750
+$Comp
+L power:GND #PWR02
+U 1 1 5E8E44E6
+P 1350 1750
+F 0 "#PWR02" H 1350 1500 50  0001 C CNN
+F 1 "GND" H 1355 1577 50  0000 C CNN
+F 2 "" H 1350 1750 50  0001 C CNN
+F 3 "" H 1350 1750 50  0001 C CNN
+	1    1350 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 1750 1500 1750
+Connection ~ 1500 1750
+Wire Wire Line
+	1500 1750 1500 1600
+$Comp
+L power:GND #PWR06
+U 1 1 5E8E522E
+P 2900 4800
+F 0 "#PWR06" H 2900 4550 50  0001 C CNN
+F 1 "GND" H 2905 4627 50  0000 C CNN
+F 2 "" H 2900 4800 50  0001 C CNN
+F 3 "" H 2900 4800 50  0001 C CNN
+	1    2900 4800
+	1    0    0    -1  
+$EndComp
+Connection ~ 2900 4800
+Wire Wire Line
+	2900 4800 2950 4800
+$Comp
+L Device:R R3
+U 1 1 5E8E658E
+P 2300 1200
+F 0 "R3" H 2370 1246 50  0000 L CNN
+F 1 "1k" H 2370 1155 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 2230 1200 50  0001 C CNN
+F 3 "https://www.mouser.es/ProductDetail/Bourns/CR1206AFX-10R0EAS?qs=sGAEpiMZZMtlubZbdhIBIJFGDp18fIDTFVcR0GBHXj8%3D" H 2300 1200 50  0001 C CNN
+F 4 "0,10" H 2300 1200 50  0001 C CNN "Precio"
+	1    2300 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 1050 2750 1050
+Connection ~ 2850 1050
+Wire Wire Line
+	2300 1350 2300 1450
+Wire Wire Line
+	2300 1450 2350 1450
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5E8E77CC
+P 2050 1450
+F 0 "SW1" H 2050 1735 50  0000 C CNN
+F 1 "SW_Push" H 2050 1644 50  0000 C CNN
+F 2 "Librerias:SW_PTS526_SM08_SMTR2_LFS" H 2050 1650 50  0001 C CNN
+F 3 "https://www.mouser.es/ProductDetail/CK/PTS526-SK08-SMTR2-LFS?qs=sGAEpiMZZMsgGjVA3toVBL%2FRce%252ByN3s1hQPqiLlQ%252BeM%3D" H 2050 1650 50  0001 C CNN
+F 4 "0,09" H 2050 1450 50  0001 C CNN "Precio"
+	1    2050 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 1450 2300 1450
+Connection ~ 2300 1450
+Wire Wire Line
+	1500 1450 1500 1600
+Connection ~ 1500 1600
+Wire Wire Line
+	1500 1450 1850 1450
+$Comp
+L Device:C C3
+U 1 1 5E8E9028
+P 2100 2050
+F 0 "C3" V 1848 2050 50  0000 C CNN
+F 1 "100n" V 1939 2050 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2138 1900 50  0001 C CNN
+F 3 "https://www.mouser.es/ProductDetail/KEMET/C0805C104K5RAC7411?qs=sGAEpiMZZMs0AnBnWHyRQC%2FZPTsdJ5JsKgOplJ2k8nQ%3D" H 2100 2050 50  0001 C CNN
+F 4 "0.117" H 2100 2050 50  0001 C CNN "Precio"
+	1    2100 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2250 2050 2350 2050
+Wire Wire Line
+	1950 2050 1500 2050
+Wire Wire Line
+	1500 2050 1500 1900
+Connection ~ 1500 1900
+Text Label 3050 1050 2    0    ~ 0
+Vcc
+Text Label 3050 1050 2    79   ~ 0
+Vcc
+Text Label 2350 2250 2    79   ~ 0
+Vcc
+$Comp
+L Device:R R2
+U 1 1 5E8EC4C6
+P 2100 2450
+F 0 "R2" V 1893 2450 50  0000 C CNN
+F 1 "22" V 1984 2450 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 2030 2450 50  0001 C CNN
+F 3 "https://www.mouser.es/ProductDetail/Bourns/CR1206AFX-10R0EAS?qs=sGAEpiMZZMtlubZbdhIBIJFGDp18fIDTFVcR0GBHXj8%3D" H 2100 2450 50  0001 C CNN
+F 4 "0,10" H 2100 2450 50  0001 C CNN "Precio"
+	1    2100 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5E8ECA38
+P 1700 2550
+F 0 "R1" V 1493 2550 50  0000 C CNN
+F 1 "22" V 1584 2550 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 1630 2550 50  0001 C CNN
+F 3 "https://www.mouser.es/ProductDetail/Bourns/CR1206AFX-10R0EAS?qs=sGAEpiMZZMtlubZbdhIBIJFGDp18fIDTFVcR0GBHXj8%3D" H 1700 2550 50  0001 C CNN
+F 4 "0,10" H 1700 2550 50  0001 C CNN "Precio"
+	1    1700 2550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2250 2450 2350 2450
+Wire Wire Line
+	2350 2550 1850 2550
+Wire Wire Line
+	1950 2450 1300 2450
+Wire Wire Line
+	1300 2550 1550 2550
+Text Label 1300 2450 0    79   ~ 0
+D+
+Text Label 1300 2550 0    79   ~ 0
+D-
+$Comp
+L Device:CP C4
+U 1 1 5E8EFBD4
+P 2150 2900
+F 0 "C4" H 2268 2946 50  0000 L CNN
+F 1 "1uF" H 2268 2855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2188 2750 50  0001 C CNN
+F 3 "https://www.mouser.es/ProductDetail/Taiyo-Yuden/JMK105BJ105KP-F?qs=sGAEpiMZZMs0AnBnWHyRQC2E6Mcmylam2IyBIj95NbAPVNcwC6GYpw%3D%3D" H 2150 2900 50  0001 C CNN
+F 4 "0.09" H 2150 2900 50  0001 C CNN "Precio"
+	1    2150 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 2750 2350 2750
+$Comp
+L power:GND #PWR04
+U 1 1 5E8F1958
+P 2150 3050
+F 0 "#PWR04" H 2150 2800 50  0001 C CNN
+F 1 "GND" H 2155 2877 50  0000 C CNN
+F 2 "" H 2150 3050 50  0001 C CNN
+F 3 "" H 2150 3050 50  0001 C CNN
+	1    2150 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR05
+U 1 1 5E8F390F
+P 2750 1050
+F 0 "#PWR05" H 2750 900 50  0001 C CNN
+F 1 "VCC" H 2767 1223 50  0000 C CNN
+F 2 "" H 2750 1050 50  0001 C CNN
+F 3 "" H 2750 1050 50  0001 C CNN
+	1    2750 1050
+	1    0    0    -1  
+$EndComp
+Connection ~ 2750 1050
+Wire Wire Line
+	2750 1050 2850 1050
+$Comp
+L Connector:USB_B_Micro J1
+U 1 1 5E8F6116
+P 1000 3900
+F 0 "J1" H 1057 4367 50  0000 C CNN
+F 1 "USB_B_Micro" H 1057 4276 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex_47346-0001" H 1150 3850 50  0001 C CNN
+F 3 "https://www.mouser.es/ProductDetail/TE-Connectivity/1981584-1?qs=sGAEpiMZZMulM8LPOQ%252BykxuVUQrupcCKrStNEFtSZyo%3D" H 1150 3850 50  0001 C CNN
+F 4 "1,57" H 1000 3900 50  0001 C CNN "Precio"
+	1    1000 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR03
+U 1 1 5E8FC808
+P 1400 3700
+F 0 "#PWR03" H 1400 3550 50  0001 C CNN
+F 1 "VCC" H 1417 3873 50  0000 C CNN
+F 2 "" H 1400 3700 50  0001 C CNN
+F 3 "" H 1400 3700 50  0001 C CNN
+	1    1400 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 3700 1400 3700
+Text Label 1300 3900 0    79   ~ 0
+D+
+Text Label 1300 4000 0    79   ~ 0
+D-
+NoConn ~ 1300 4100
+$Comp
+L power:GND #PWR01
+U 1 1 5E903516
+P 1000 4350
+F 0 "#PWR01" H 1000 4100 50  0001 C CNN
+F 1 "GND" H 1005 4177 50  0000 C CNN
+F 2 "" H 1000 4350 50  0001 C CNN
+F 3 "" H 1000 4350 50  0001 C CNN
+	1    1000 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  4300 900  4350
+Wire Wire Line
+	900  4350 1000 4350
+Wire Wire Line
+	1000 4350 1000 4300
+Connection ~ 1000 4350
+Text Label 3550 1750 0    59   ~ 0
+MISO
+Text Label 3550 1650 0    59   ~ 0
+MOSI
+Text Label 3550 1550 0    59   ~ 0
+SCK
+$Comp
+L Device:R R4
+U 1 1 5E90C5C8
+P 8000 650
+F 0 "R4" V 7793 650 50  0000 C CNN
+F 1 "330" V 7884 650 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 7930 650 50  0001 C CNN
+F 3 "https://www.mouser.es/ProductDetail/Bourns/CR1206AFX-10R0EAS?qs=sGAEpiMZZMtlubZbdhIBIJFGDp18fIDTFVcR0GBHXj8%3D" H 8000 650 50  0001 C CNN
+F 4 "0,10" H 8000 650 50  0001 C CNN "Precio"
+	1    8000 650 
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5E90CA97
+P 8000 950
+F 0 "R5" V 7793 950 50  0000 C CNN
+F 1 "330" V 7884 950 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 7930 950 50  0001 C CNN
+F 3 "https://www.mouser.es/ProductDetail/Bourns/CR1206AFX-10R0EAS?qs=sGAEpiMZZMtlubZbdhIBIJFGDp18fIDTFVcR0GBHXj8%3D" H 8000 950 50  0001 C CNN
+F 4 "0,10" H 8000 950 50  0001 C CNN "Precio"
+	1    8000 950 
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5E90D069
+P 8000 1250
+F 0 "R6" V 7793 1250 50  0000 C CNN
+F 1 "330" V 7884 1250 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 7930 1250 50  0001 C CNN
+F 3 "https://www.mouser.es/ProductDetail/Bourns/CR1206AFX-10R0EAS?qs=sGAEpiMZZMtlubZbdhIBIJFGDp18fIDTFVcR0GBHXj8%3D" H 8000 1250 50  0001 C CNN
+F 4 "0,10" H 8000 1250 50  0001 C CNN "Precio"
+	1    8000 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5E90D891
+P 8000 1550
+F 0 "R7" V 7793 1550 50  0000 C CNN
+F 1 "330" V 7884 1550 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 7930 1550 50  0001 C CNN
+F 3 "https://www.mouser.es/ProductDetail/Bourns/CR1206AFX-10R0EAS?qs=sGAEpiMZZMtlubZbdhIBIJFGDp18fIDTFVcR0GBHXj8%3D" H 8000 1550 50  0001 C CNN
+F 4 "0,10" H 8000 1550 50  0001 C CNN "Precio"
+	1    8000 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5E90EE01
+P 8000 1850
+F 0 "R8" V 7793 1850 50  0000 C CNN
+F 1 "330" V 7884 1850 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 7930 1850 50  0001 C CNN
+F 3 "https://www.mouser.es/ProductDetail/Bourns/CR1206AFX-10R0EAS?qs=sGAEpiMZZMtlubZbdhIBIJFGDp18fIDTFVcR0GBHXj8%3D" H 8000 1850 50  0001 C CNN
+F 4 "0,10" H 8000 1850 50  0001 C CNN "Precio"
+	1    8000 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5E9109B7
+P 8600 800
+F 0 "D1" V 8639 683 50  0000 R CNN
+F 1 "LED" V 8548 683 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 8600 800 50  0001 C CNN
+F 3 "https://www.mouser.es/ProductDetail/Kingbright/APTR3216-VFX?qs=sGAEpiMZZMve4%2FbfQkoj%252BNWcOCmuH1iolr6ynu%252BUQJ8%3D" H 8600 800 50  0001 C CNN
+F 4 "0,473" H 8600 800 50  0001 C CNN "Precio"
+	1    8600 800 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8150 950  8600 950 
+Wire Wire Line
+	8150 650  8600 650 
+$Comp
+L Device:LED D5
+U 1 1 5E912F13
+P 8900 800
+F 0 "D5" V 8847 878 50  0000 L CNN
+F 1 "LED" V 8938 878 50  0000 L CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 8900 800 50  0001 C CNN
+F 3 "https://www.mouser.es/ProductDetail/Kingbright/APTR3216-VFX?qs=sGAEpiMZZMve4%2FbfQkoj%252BNWcOCmuH1iolr6ynu%252BUQJ8%3D" H 8900 800 50  0001 C CNN
+F 4 "0,473" H 8900 800 50  0001 C CNN "Precio"
+	1    8900 800 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8600 950  8900 950 
+Connection ~ 8600 950 
+Wire Wire Line
+	8600 650  8900 650 
+Connection ~ 8600 650 
+$Comp
+L Device:LED D2
+U 1 1 5E914A1D
+P 8600 1100
+F 0 "D2" V 8639 983 50  0000 R CNN
+F 1 "LED" V 8548 983 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 8600 1100 50  0001 C CNN
+F 3 "https://www.mouser.es/ProductDetail/Kingbright/APTR3216-VFX?qs=sGAEpiMZZMve4%2FbfQkoj%252BNWcOCmuH1iolr6ynu%252BUQJ8%3D" H 8600 1100 50  0001 C CNN
+F 4 "0,473" H 8600 1100 50  0001 C CNN "Precio"
+	1    8600 1100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D6
+U 1 1 5E914E03
+P 8900 1100
+F 0 "D6" V 8847 1178 50  0000 L CNN
+F 1 "LED" V 8938 1178 50  0000 L CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 8900 1100 50  0001 C CNN
+F 3 "https://www.mouser.es/ProductDetail/Kingbright/APTR3216-VFX?qs=sGAEpiMZZMve4%2FbfQkoj%252BNWcOCmuH1iolr6ynu%252BUQJ8%3D" H 8900 1100 50  0001 C CNN
+F 4 "0,473" H 8900 1100 50  0001 C CNN "Precio"
+	1    8900 1100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8900 1250 8600 1250
+Wire Wire Line
+	8600 1250 8150 1250
+Connection ~ 8600 1250
+$Comp
+L Device:LED D9
+U 1 1 5E916712
+P 9200 1100
+F 0 "D9" V 9239 983 50  0000 R CNN
+F 1 "LED" V 9148 983 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 9200 1100 50  0001 C CNN
+F 3 "https://www.mouser.es/ProductDetail/Kingbright/APTR3216-VFX?qs=sGAEpiMZZMve4%2FbfQkoj%252BNWcOCmuH1iolr6ynu%252BUQJ8%3D" H 9200 1100 50  0001 C CNN
+F 4 "0,473" H 9200 1100 50  0001 C CNN "Precio"
+	1    9200 1100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D11
+U 1 1 5E916F2A
+P 9500 1100
+F 0 "D11" V 9447 1178 50  0000 L CNN
+F 1 "LED" V 9538 1178 50  0000 L CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 9500 1100 50  0001 C CNN
+F 3 "https://www.mouser.es/ProductDetail/Kingbright/APTR3216-VFX?qs=sGAEpiMZZMve4%2FbfQkoj%252BNWcOCmuH1iolr6ynu%252BUQJ8%3D" H 9500 1100 50  0001 C CNN
+F 4 "0,473" H 9500 1100 50  0001 C CNN "Precio"
+	1    9500 1100
+	0    1    1    0   
+$EndComp
+Connection ~ 8900 650 
+Wire Wire Line
+	9200 1250 8900 1250
+Connection ~ 8900 1250
+$Comp
+L Device:LED D14
+U 1 1 5E91B16E
+P 9900 1250
+F 0 "D14" V 9847 1328 50  0000 L CNN
+F 1 "LED" V 9938 1328 50  0000 L CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 9900 1250 50  0001 C CNN
+F 3 "https://www.mouser.es/ProductDetail/Kingbright/APTR3216-VFX?qs=sGAEpiMZZMve4%2FbfQkoj%252BNWcOCmuH1iolr6ynu%252BUQJ8%3D" H 9900 1250 50  0001 C CNN
+F 4 "0,473" H 9900 1250 50  0001 C CNN "Precio"
+	1    9900 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5E91B710
+P 8600 1400
+F 0 "D3" V 8639 1283 50  0000 R CNN
+F 1 "LED" V 8548 1283 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 8600 1400 50  0001 C CNN
+F 3 "https://www.mouser.es/ProductDetail/Kingbright/APTR3216-VFX?qs=sGAEpiMZZMve4%2FbfQkoj%252BNWcOCmuH1iolr6ynu%252BUQJ8%3D" H 8600 1400 50  0001 C CNN
+F 4 "0,473" H 8600 1400 50  0001 C CNN "Precio"
+	1    8600 1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D7
+U 1 1 5E91BBAD
+P 8900 1400
+F 0 "D7" V 8847 1478 50  0000 L CNN
+F 1 "LED" V 8938 1478 50  0000 L CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 8900 1400 50  0001 C CNN
+F 3 "https://www.mouser.es/ProductDetail/Kingbright/APTR3216-VFX?qs=sGAEpiMZZMve4%2FbfQkoj%252BNWcOCmuH1iolr6ynu%252BUQJ8%3D" H 8900 1400 50  0001 C CNN
+F 4 "0,473" H 8900 1400 50  0001 C CNN "Precio"
+	1    8900 1400
+	0    1    1    0   
+$EndComp
+Connection ~ 8900 950 
+Wire Wire Line
+	8900 1550 8600 1550
+Wire Wire Line
+	8600 1550 8150 1550
+Connection ~ 8600 1550
+$Comp
+L Device:LED D4
+U 1 1 5E92128D
+P 8600 1700
+F 0 "D4" V 8639 1583 50  0000 R CNN
+F 1 "LED" V 8548 1583 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 8600 1700 50  0001 C CNN
+F 3 "https://www.mouser.es/ProductDetail/Kingbright/APTR3216-VFX?qs=sGAEpiMZZMve4%2FbfQkoj%252BNWcOCmuH1iolr6ynu%252BUQJ8%3D" H 8600 1700 50  0001 C CNN
+F 4 "0,473" H 8600 1700 50  0001 C CNN "Precio"
+	1    8600 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D8
+U 1 1 5E9216BB
+P 8900 1700
+F 0 "D8" V 8847 1778 50  0000 L CNN
+F 1 "LED" V 8938 1778 50  0000 L CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 8900 1700 50  0001 C CNN
+F 3 "https://www.mouser.es/ProductDetail/Kingbright/APTR3216-VFX?qs=sGAEpiMZZMve4%2FbfQkoj%252BNWcOCmuH1iolr6ynu%252BUQJ8%3D" H 8900 1700 50  0001 C CNN
+F 4 "0,473" H 8900 1700 50  0001 C CNN "Precio"
+	1    8900 1700
+	0    1    1    0   
+$EndComp
+Connection ~ 8900 1550
+Wire Wire Line
+	8900 1850 8600 1850
+Wire Wire Line
+	8600 1850 8150 1850
+Connection ~ 8600 1850
+$Comp
+L Device:LED D10
+U 1 1 5E923A47
+P 9200 1700
+F 0 "D10" V 9239 1583 50  0000 R CNN
+F 1 "LED" V 9148 1583 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 9200 1700 50  0001 C CNN
+F 3 "https://www.mouser.es/ProductDetail/Kingbright/APTR3216-VFX?qs=sGAEpiMZZMve4%2FbfQkoj%252BNWcOCmuH1iolr6ynu%252BUQJ8%3D" H 9200 1700 50  0001 C CNN
+F 4 "0,473" H 9200 1700 50  0001 C CNN "Precio"
+	1    9200 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D12
+U 1 1 5E924148
+P 9500 1700
+F 0 "D12" V 9447 1778 50  0000 L CNN
+F 1 "LED" V 9538 1778 50  0000 L CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 9500 1700 50  0001 C CNN
+F 3 "https://www.mouser.es/ProductDetail/Kingbright/APTR3216-VFX?qs=sGAEpiMZZMve4%2FbfQkoj%252BNWcOCmuH1iolr6ynu%252BUQJ8%3D" H 9500 1700 50  0001 C CNN
+F 4 "0,473" H 9500 1700 50  0001 C CNN "Precio"
+	1    9500 1700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9500 1850 9200 1850
+Wire Wire Line
+	9200 1850 8900 1850
+Connection ~ 9200 1850
+Connection ~ 8900 1850
+Wire Wire Line
+	9500 1550 9200 1550
+Wire Wire Line
+	9200 1550 9200 1250
+Connection ~ 9200 1550
+Wire Wire Line
+	8900 1550 9050 1550
+Wire Wire Line
+	9050 1550 9050 1700
+Wire Wire Line
+	9050 1700 9600 1700
+Wire Wire Line
+	8900 950  9050 950 
+$Comp
+L Device:LED D13
+U 1 1 5E91A966
+P 9600 1250
+F 0 "D13" V 9639 1133 50  0000 R CNN
+F 1 "LED" V 9548 1133 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 9600 1250 50  0001 C CNN
+F 3 "https://www.mouser.es/ProductDetail/Kingbright/APTR3216-VFX?qs=sGAEpiMZZMve4%2FbfQkoj%252BNWcOCmuH1iolr6ynu%252BUQJ8%3D" H 9600 1250 50  0001 C CNN
+F 4 "0,473" H 9600 1250 50  0001 C CNN "Precio"
+	1    9600 1250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9600 1100 9900 1100
+Wire Wire Line
+	9600 1400 9900 1400
+Wire Wire Line
+	9600 1400 9600 1700
+Connection ~ 9600 1400
+$Comp
+L Device:LED D15
+U 1 1 5E93F2D5
+P 10100 800
+F 0 "D15" V 10139 683 50  0000 R CNN
+F 1 "LED" V 10048 683 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 10100 800 50  0001 C CNN
+F 3 "https://www.mouser.es/ProductDetail/Kingbright/APTR3216-VFX?qs=sGAEpiMZZMve4%2FbfQkoj%252BNWcOCmuH1iolr6ynu%252BUQJ8%3D" H 10100 800 50  0001 C CNN
+F 4 "0,473" H 10100 800 50  0001 C CNN "Precio"
+	1    10100 800 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D17
+U 1 1 5E940119
+P 10400 800
+F 0 "D17" V 10347 878 50  0000 L CNN
+F 1 "LED" V 10438 878 50  0000 L CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 10400 800 50  0001 C CNN
+F 3 "https://www.mouser.es/ProductDetail/Kingbright/APTR3216-VFX?qs=sGAEpiMZZMve4%2FbfQkoj%252BNWcOCmuH1iolr6ynu%252BUQJ8%3D" H 10400 800 50  0001 C CNN
+F 4 "0,473" H 10400 800 50  0001 C CNN "Precio"
+	1    10400 800 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10400 650  10100 650 
+Connection ~ 10100 650 
+Wire Wire Line
+	10100 950  10400 950 
+Wire Wire Line
+	10100 950  10100 1400
+Wire Wire Line
+	10100 1400 9900 1400
+Connection ~ 10100 950 
+Connection ~ 9900 1400
+$Comp
+L Device:LED D19
+U 1 1 5E947F0A
+P 10700 800
+F 0 "D19" V 10739 683 50  0000 R CNN
+F 1 "LED" V 10648 683 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 10700 800 50  0001 C CNN
+F 3 "https://www.mouser.es/ProductDetail/Kingbright/APTR3216-VFX?qs=sGAEpiMZZMve4%2FbfQkoj%252BNWcOCmuH1iolr6ynu%252BUQJ8%3D" H 10700 800 50  0001 C CNN
+F 4 "0,473" H 10700 800 50  0001 C CNN "Precio"
+	1    10700 800 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D20
+U 1 1 5E948790
+P 11000 800
+F 0 "D20" V 10947 878 50  0000 L CNN
+F 1 "LED" V 11038 878 50  0000 L CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 11000 800 50  0001 C CNN
+F 3 "https://www.mouser.es/ProductDetail/Kingbright/APTR3216-VFX?qs=sGAEpiMZZMve4%2FbfQkoj%252BNWcOCmuH1iolr6ynu%252BUQJ8%3D" H 11000 800 50  0001 C CNN
+F 4 "0,473" H 11000 800 50  0001 C CNN "Precio"
+	1    11000 800 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11000 650  10700 650 
+Wire Wire Line
+	10700 650  10400 650 
+Connection ~ 10700 650 
+Connection ~ 10400 650 
+Wire Wire Line
+	10700 950  11000 950 
+Wire Wire Line
+	10700 950  10700 1850
+Wire Wire Line
+	10700 1850 10500 1850
+Connection ~ 10700 950 
+Connection ~ 9500 1850
+Wire Wire Line
+	9900 1100 9900 800 
+Wire Wire Line
+	9900 800  10500 800 
+Connection ~ 9900 1100
+$Comp
+L Device:LED D16
+U 1 1 5E951791
+P 10200 1250
+F 0 "D16" V 10239 1133 50  0000 R CNN
+F 1 "LED" V 10148 1133 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 10200 1250 50  0001 C CNN
+F 3 "https://www.mouser.es/ProductDetail/Kingbright/APTR3216-VFX?qs=sGAEpiMZZMve4%2FbfQkoj%252BNWcOCmuH1iolr6ynu%252BUQJ8%3D" H 10200 1250 50  0001 C CNN
+F 4 "0,473" H 10200 1250 50  0001 C CNN "Precio"
+	1    10200 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D18
+U 1 1 5E951DE4
+P 10500 1250
+F 0 "D18" V 10447 1328 50  0000 L CNN
+F 1 "LED" V 10538 1328 50  0000 L CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 10500 1250 50  0001 C CNN
+F 3 "https://www.mouser.es/ProductDetail/Kingbright/APTR3216-VFX?qs=sGAEpiMZZMve4%2FbfQkoj%252BNWcOCmuH1iolr6ynu%252BUQJ8%3D" H 10500 1250 50  0001 C CNN
+F 4 "0,473" H 10500 1250 50  0001 C CNN "Precio"
+	1    10500 1250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10500 800  10500 1100
+Wire Wire Line
+	10200 1100 10500 1100
+Connection ~ 10500 1100
+Wire Wire Line
+	10500 1400 10200 1400
+Wire Wire Line
+	10500 1400 10500 1850
+Connection ~ 10500 1400
+Connection ~ 10500 1850
+Wire Wire Line
+	10500 1850 9500 1850
+Connection ~ 9200 1250
+Wire Wire Line
+	9200 1250 9500 1250
+Wire Wire Line
+	8900 650  9200 650 
+Wire Wire Line
+	9200 950  9500 950 
+Wire Wire Line
+	9200 950  9200 650 
+Connection ~ 9200 950 
+Connection ~ 9200 650 
+Wire Wire Line
+	9200 650  10100 650 
+Wire Wire Line
+	9050 950  9050 1100
+Wire Wire Line
+	9050 1100 9600 1100
+Connection ~ 9600 1100
+Wire Notes Line
+	7600 500  7600 2150
+Wire Notes Line
+	7600 2150 11200 2150
+Text Notes 7600 2150 0    59   ~ 0
+Pantalla LED Charliplexada
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5E834BAC
+P 10550 3150
+F 0 "BT1" H 10668 3246 50  0000 L CNN
+F 1 "Battery_Cell" H 10668 3155 50  0000 L CNN
+F 2 "Librerias:LINX CR2032 Holder" V 10550 3210 50  0001 C CNN
+F 3 "https://www.mouser.es/ProductDetail/Linx-Technologies/BAT-HLD-012-SMT?qs=sGAEpiMZZMtT9MhkajLHrtLdadThLjMVSNg%2F9RTE5Tg%3D" V 10550 3210 50  0001 C CNN
+F 4 "0,26" H 10550 3150 50  0001 C CNN "Precio"
+	1    10550 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10550 2950 10550 2750
+Wire Wire Line
+	10550 2750 9850 2750
+Wire Wire Line
+	9850 2850 10450 2850
+Wire Wire Line
+	10450 2850 10450 3250
+Wire Wire Line
+	10450 3250 10550 3250
+Text Label 9850 2550 0    59   ~ 0
+SCL
+Text Label 9850 2650 0    59   ~ 0
+SDA
+Text Label 8650 2650 2    79   ~ 0
+Vcc
+$Comp
+L Device:C C5
+U 1 1 5E84776A
+P 8000 2800
+F 0 "C5" H 8115 2846 50  0000 L CNN
+F 1 "100n" H 8115 2755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8038 2650 50  0001 C CNN
+F 3 "https://www.mouser.es/ProductDetail/KEMET/C0805C104K5RAC7411?qs=sGAEpiMZZMs0AnBnWHyRQC%2FZPTsdJ5JsKgOplJ2k8nQ%3D" H 8000 2800 50  0001 C CNN
+F 4 "0.117" H 8000 2800 50  0001 C CNN "Precio"
+	1    8000 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5E84C212
+P 10550 3250
+F 0 "#PWR0101" H 10550 3000 50  0001 C CNN
+F 1 "GND" H 10555 3077 50  0000 C CNN
+F 2 "" H 10550 3250 50  0001 C CNN
+F 3 "" H 10550 3250 50  0001 C CNN
+	1    10550 3250
+	1    0    0    -1  
+$EndComp
+Connection ~ 10550 3250
+$Comp
+L power:GND #PWR0102
+U 1 1 5E84D961
+P 8000 2950
+F 0 "#PWR0102" H 8000 2700 50  0001 C CNN
+F 1 "GND" H 8005 2777 50  0000 C CNN
+F 2 "" H 8000 2950 50  0001 C CNN
+F 3 "" H 8000 2950 50  0001 C CNN
+	1    8000 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5E84E849
+P 8400 2750
+F 0 "R9" V 8193 2750 50  0000 C CNN
+F 1 "10k" V 8284 2750 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 8330 2750 50  0001 C CNN
+F 3 "https://www.mouser.es/ProductDetail/Bourns/CR1206AFX-10R0EAS?qs=sGAEpiMZZMtlubZbdhIBIJFGDp18fIDTFVcR0GBHXj8%3D" H 8400 2750 50  0001 C CNN
+F 4 "0,10" H 8400 2750 50  0001 C CNN "Precio"
+	1    8400 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8250 2650 8250 2750
+Wire Wire Line
+	8250 2650 8650 2650
+Wire Wire Line
+	8550 2750 8650 2750
+NoConn ~ 8650 2550
+NoConn ~ 8650 2850
+Text Label 3550 2650 0    59   ~ 0
+SCL
+Text Label 3550 2750 0    59   ~ 0
+SDA
+$Comp
+L Device:Crystal_GND2 Y1
+U 1 1 5E873C14
+P 2000 1750
+F 0 "Y1" V 2046 1881 50  0000 L CNN
+F 1 "16Mhz" V 1955 1881 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_2016-4Pin_2.0x1.6mm" H 2000 1750 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/137/FA-128_en-931416.pdf" H 2000 1750 50  0001 C CNN
+	1    2000 1750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1800 1600 2000 1600
+Wire Wire Line
+	1800 1900 2000 1900
+Connection ~ 2000 1900
+Wire Wire Line
+	2000 1900 2350 1900
+Connection ~ 2000 1600
+Wire Wire Line
+	2000 1600 2350 1600
+Wire Wire Line
+	1500 1750 2200 1750
+Wire Wire Line
+	8000 2650 8250 2650
+Connection ~ 8250 2650
+Wire Wire Line
+	1400 3700 1700 3700
+Connection ~ 1400 3700
+Wire Wire Line
+	1700 4000 1700 4350
+Wire Wire Line
+	1700 4350 1000 4350
+$Comp
+L power:GND #PWR0103
+U 1 1 5E819DD8
+P 10600 6100
+F 0 "#PWR0103" H 10600 5850 50  0001 C CNN
+F 1 "GND" H 10605 5927 50  0000 C CNN
+F 2 "" H 10600 6100 50  0001 C CNN
+F 3 "" H 10600 6100 50  0001 C CNN
+	1    10600 6100
+	1    0    0    -1  
+$EndComp
+Text Label 10050 5950 1    59   ~ 0
+MOSI
+Text Label 2250 1450 1    59   ~ 0
+Reset
+Text Label 10250 5950 1    59   ~ 0
+Reset
+Text Label 10750 2700 3    59   ~ 0
+SDA
+Text Label 10950 2700 3    59   ~ 0
+SCL
+Connection ~ 10950 2350
+Wire Wire Line
+	10950 2300 10950 2350
+Wire Wire Line
+	10950 2350 10950 2400
+Wire Wire Line
+	10750 2350 10950 2350
+Wire Wire Line
+	10750 2400 10750 2350
+Text Label 10950 2300 2    79   ~ 0
+Vcc
+$Comp
+L Device:R R10
+U 1 1 5E86174B
+P 10750 2550
+F 0 "R10" H 10820 2596 50  0000 L CNN
+F 1 "4,7k" H 10820 2505 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 10680 2550 50  0001 C CNN
+F 3 "https://www.mouser.es/ProductDetail/Bourns/CR1206AFX-10R0EAS?qs=sGAEpiMZZMtlubZbdhIBIJFGDp18fIDTFVcR0GBHXj8%3D" H 10750 2550 50  0001 C CNN
+F 4 "0,10" H 10750 2550 50  0001 C CNN "Precio"
+	1    10750 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5E85E5B1
+P 10950 2550
+F 0 "R11" H 11020 2596 50  0000 L CNN
+F 1 "4,7k" H 11020 2505 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 10880 2550 50  0001 C CNN
+F 3 "https://www.mouser.es/ProductDetail/Bourns/CR1206AFX-10R0EAS?qs=sGAEpiMZZMtlubZbdhIBIJFGDp18fIDTFVcR0GBHXj8%3D" H 10950 2550 50  0001 C CNN
+F 4 "0,10" H 10950 2550 50  0001 C CNN "Precio"
+	1    10950 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L DS3231:DS3231 IC1
+U 1 1 5E82DC1D
+P 9250 2950
+F 0 "IC1" H 9250 3526 50  0000 C CNN
+F 1 "DS3231" H 9250 2950 50  0001 L BNN
+F 2 "Librerias:SO16W" H 9250 2950 50  0001 L BNN
+F 3 "https://www.mouser.es/ProductDetail/Maxim-Integrated/DS3231STR?qs=sGAEpiMZZMuuBt6TL7D%2F6MjWA7AEMdJy" H 9250 2950 59  0001 C CNN
+F 4 "6,62" H 9250 2950 50  0001 C CNN "Precio"
+	1    9250 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x06_Male J8
+U 1 1 5E88A6BB
+P 10150 6150
+F 0 "J8" V 10304 5762 50  0000 R CNN
+F 1 "ICSP" V 10400 5850 50  0000 R CNN
+F 2 "Librerias:ICSP_SMD_Conn" H 10150 6150 50  0001 C CNN
+F 3 "https://www.mouser.es/ProductDetail/Bourns/CR1206AFX-10R0EAS?qs=sGAEpiMZZMtlubZbdhIBIJFGDp18fIDTFVcR0GBHXj8%3D" H 10150 6150 50  0001 C CNN
+F 4 "0" H 10150 6150 50  0001 C CNN "Precio"
+	1    10150 6150
+	0    -1   -1   0   
+$EndComp
+Text Label 9950 5950 1    59   ~ 0
+SCK
+Text Label 10150 5950 1    59   ~ 0
+MISO
+$Comp
+L power:VCC #PWR0104
+U 1 1 5E88F6FD
+P 10350 5950
+F 0 "#PWR0104" H 10350 5800 50  0001 C CNN
+F 1 "VCC" H 10367 6123 50  0000 C CNN
+F 2 "" H 10350 5950 50  0001 C CNN
+F 3 "" H 10350 5950 50  0001 C CNN
+	1    10350 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10450 5950 10600 5950
+Wire Wire Line
+	10600 5950 10600 6100
+Text Label 7850 650  2    59   ~ 0
+P1
+Text Label 7850 950  2    59   ~ 0
+P2
+Text Label 7850 1250 2    59   ~ 0
+P3
+Text Label 7850 1550 2    59   ~ 0
+P4
+Text Label 7850 1850 2    59   ~ 0
+P5
+Text Label 3550 4250 0    59   ~ 0
+P5
+Text Label 3550 4150 0    59   ~ 0
+P4
+Text Label 3550 4050 0    59   ~ 0
+P3
+Text Label 3550 3850 0    59   ~ 0
+P1
+Text Label 3550 3950 0    59   ~ 0
+P2
+NoConn ~ 3550 3650
+$Comp
+L Device:CP C6
+U 1 1 5E89F2B4
+P 1700 3850
+F 0 "C6" H 1818 3896 50  0000 L CNN
+F 1 "10uF" H 1818 3805 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J" H 1738 3700 50  0001 C CNN
+F 3 "https://www.mouser.es/ProductDetail/AVX/TAJB106K006TNJ?qs=sGAEpiMZZMukHu%252BjC5l7Yf%252B2%2FiYGaSurUyoxJi3AciM%3D" H 1700 3850 50  0001 C CNN
+F 4 "0,3" H 1700 3850 50  0001 C CNN "Precio"
+	1    1700 3850
+	1    0    0    -1  
+$EndComp
+Text Label 2300 2450 0    59   ~ 0
+d+
+Text Label 2300 2550 0    59   ~ 0
+d-
+NoConn ~ 3550 2150
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5E951AE2
+P 3800 3050
+F 0 "SW2" H 3800 3335 50  0000 C CNN
+F 1 "SEL_Columna" H 4300 3050 50  0000 C CNN
+F 2 "Librerias:SW_PTS526_SM08_SMTR2_LFS" H 3800 3250 50  0001 C CNN
+F 3 "https://www.mouser.es/ProductDetail/CK/PTS526-SK08-SMTR2-LFS?qs=sGAEpiMZZMsgGjVA3toVBL%2FRce%252ByN3s1hQPqiLlQ%252BeM%3D" H 3800 3250 50  0001 C CNN
+F 4 "0,09" H 3800 3050 50  0001 C CNN "Precio"
+	1    3800 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW3
+U 1 1 5E953312
+P 3800 3250
+F 0 "SW3" H 3800 3535 50  0000 C CNN
+F 1 "Incrementar" H 4300 3250 50  0000 C CNN
+F 2 "Librerias:SW_PTS526_SM08_SMTR2_LFS" H 3800 3450 50  0001 C CNN
+F 3 "https://www.mouser.es/ProductDetail/CK/PTS526-SK08-SMTR2-LFS?qs=sGAEpiMZZMsgGjVA3toVBL%2FRce%252ByN3s1hQPqiLlQ%252BeM%3D" H 3800 3450 50  0001 C CNN
+F 4 "0,09" H 3800 3250 50  0001 C CNN "Precio"
+	1    3800 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5E9583AE
+P 4000 3400
+F 0 "#PWR0105" H 4000 3150 50  0001 C CNN
+F 1 "GND" H 4005 3227 50  0000 C CNN
+F 2 "" H 4000 3400 50  0001 C CNN
+F 3 "" H 4000 3400 50  0001 C CNN
+	1    4000 3400
+	1    0    0    -1  
+$EndComp
+Connection ~ 4000 3250
+NoConn ~ 3550 2950
+NoConn ~ 3550 2850
+Wire Wire Line
+	3550 3250 3600 3250
+$Comp
+L Switch:SW_Push SW4
+U 1 1 5E976EA6
+P 3800 3350
+F 0 "SW4" H 3800 3635 50  0000 C CNN
+F 1 "Decrementar" H 4300 3350 50  0000 C CNN
+F 2 "Librerias:SW_PTS526_SM08_SMTR2_LFS" H 3800 3550 50  0001 C CNN
+F 3 "https://www.mouser.es/ProductDetail/CK/PTS526-SK08-SMTR2-LFS?qs=sGAEpiMZZMsgGjVA3toVBL%2FRce%252ByN3s1hQPqiLlQ%252BeM%3D" H 3800 3550 50  0001 C CNN
+F 4 "0,09" H 3800 3350 50  0001 C CNN "Precio"
+	1    3800 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3250 4000 3350
+Wire Wire Line
+	4000 3350 4000 3400
+Connection ~ 4000 3350
+Wire Wire Line
+	3600 3350 3550 3350
+Wire Wire Line
+	4000 3050 4000 3250
+Wire Wire Line
+	3550 3050 3600 3050
+NoConn ~ 3550 3150
+$EndSCHEMATC

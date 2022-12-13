@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Binary-Clock-rescue)(type Legacy)(uri "${KIPRJMOD}/Binary Clock-rescue.lib")(options "")(descr ""))
+)
