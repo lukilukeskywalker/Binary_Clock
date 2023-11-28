@@ -1,3 +1,5 @@
 (sym_lib_table
-  (lib (name TPSE-Glass-rescue)(type Legacy)(uri "${KIPRJMOD}/TPSE Glass-rescue.lib")(options "")(descr ""))
+  (version 7)
+  (lib (name "TPSE-Glass-rescue")(type "Legacy")(uri "${KIPRJMOD}/TPSE Glass-rescue.lib")(options "")(descr ""))
+  (lib (name "TPSE Glass-rescue")(type "KiCad")(uri "${KIPRJMOD}/TPSE Glass-rescue.kicad_sym")(options "")(descr ""))
 )
